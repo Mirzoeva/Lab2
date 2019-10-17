@@ -20,14 +20,14 @@ public class Parser {
                 System.out.println(Arrays.toString(nextLine));
             }
         }
-//        CSVReader reader2 = new CSVReader(new FileReader("/Users/umamirzoeva/Parallel/Lab2/src/main/resources/664600583_T_ONTIME_sample.csv"), ',' , '"' , 0);
-//        //Read CSV line by line and use the string array as you want
-//        String[] nextLine2;
-//        while ((nextLine2 = reader2.readNext()) != null) {
-//            if (nextLine2 != null) {
-//                //Verifying the read data here
-//                System.out.println(Arrays.toString(nextLine2));
-//            }
-//        }nextLine2
+        CSVReader reader2 = new CSVReader(new FileReader("/Users/umamirzoeva/Parallel/Lab2/src/main/resources/664600583_T_ONTIME_sample.csv"), ',' , '"' , 0);
+        //Read CSV line by line and use the string array as you want
+        String[] nextLine2;
+        while ((nextLine2 = reader2.readNext()) != null) {
+            if (nextLine2 != null) {
+                //Verifying the read data here
+                System.out.println(Arrays.toString(nextLine2));
+            }
+        }nextLine2
     }
 }

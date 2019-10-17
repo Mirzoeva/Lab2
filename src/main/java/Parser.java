@@ -28,6 +28,6 @@ public class Parser {
                 //Verifying the read data here
                 System.out.println(Arrays.toString(nextLine2));
             }
-        }nextLine2
+        }
     }
 }

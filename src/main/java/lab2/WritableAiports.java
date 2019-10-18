@@ -6,7 +6,7 @@ import au.com.bytecode.opencsv.CSVReader;
 
 
 
-public class ParserAiports {
+public class WritableAiports {
     @SuppressWarnings("resource")
     public static void main(String[] args) throws Exception {
         CSVReader reader = new CSVReader(new FileReader("/Users/umamirzoeva/Parallel/Lab2/src/main/resources/L_AIRPORT_ID.csv"), ',' , '"' , 0);

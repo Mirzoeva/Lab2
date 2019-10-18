@@ -3,9 +3,18 @@ package lab2;
 import java.io.FileReader;
 import java.util.Arrays;
 import au.com.bytecode.opencsv.CSVReader;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.io.LongWritable;
 
 
-
+public class MapperAiports extends Mapper<LongWritable, Text, TextPair, Text> {
+    @Override
+    protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
+        ServiceCall call = new ServiceCall(value);
+        context.write(new TextPair(call.getSystemA().toString(),"1"),
+                new Text(call.toString()));
+    }
+}
 
 public class MapperAiports {
     public static void main(String[] args) throws Exception {

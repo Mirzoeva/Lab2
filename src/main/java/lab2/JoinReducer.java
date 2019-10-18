@@ -10,7 +10,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
     @Override
     protected void reduce(TextPair key, Iterable<Text> values, Context context) throws IOException, InterruptedException{
         Iterator<Text> iter = values.iterator();
-        long count = 0;
+        int count = 0;
         int correntTime;
         int maxTime = Integer.MIN_VALUE;
         int minTime = Integer.MAX_VALUE;
@@ -27,8 +27,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         }
         if (count != 0){
             int average = sum/count;
-            Text result = new Text("Min: " + minTime + "Max: " + maxTime + "Average: " + average);
-            context.write(key.getFirst(), result);
+            context.write(key.getFirst(), new Text("Min: " + minTime + "Max: " + maxTime + "Average: " + average));
         }
     }
 }

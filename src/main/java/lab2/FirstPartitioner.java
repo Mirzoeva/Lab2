@@ -4,6 +4,6 @@ import org.apache.hadoop.mapreduce.Partitioner;
 
 import java.security.Key;
 
-public class FirstPartitioner {
+public class FirstPartitioner extends Partitioner {
 
 }

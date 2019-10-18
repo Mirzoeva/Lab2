@@ -22,7 +22,7 @@ public class Main {
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
         job.setPartitionerClass(FirstPartitioner.class);
         job.setGroupingComparatorClass(FirstComparator.class);
-//        job.setReducerClass(JoinReducer.class);
+        job.setReducerClass(JoinReducer.class);
         job.setMapOutputKeyClass(TextPair.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);

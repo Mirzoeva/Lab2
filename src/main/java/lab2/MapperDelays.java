@@ -12,7 +12,7 @@ public class MapperDelays extends Mapper<LongWritable, Text, TextPair, Text> {
         if (key.get() == 0) {
             return;
         }
-        float time = new Float(new ParserDelays(value.toString()).getValue());
+        float time = Float.parseFloat(new ParserDelays(value.toString()).getValue());
         TextPair delay = new TextPair(new Text(new ParserDelays(value.toString()).getKey()), new Text("1"));
         if (time > 0){
             context.write(delay, new Text(time.toString()));

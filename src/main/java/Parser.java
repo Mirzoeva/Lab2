@@ -1,13 +1,7 @@
 import java.io.FileReader;
 import java.util.Arrays;
 import au.com.bytecode.opencsv.CSVReader;
-at java.util.regex.Pattern.error(Pattern.java:1924)
-        at java.util.regex.Pattern.clazz(Pattern.java:2493)
-        at java.util.regex.Pattern.sequence(Pattern.java:2030)
-        at java.util.regex.Pattern.expr(Pattern.java:1964)
-        at java.util.regex.Pattern.compile(Pattern.java:1665)
-        at java.util.regex.Pattern.<init>(Pattern.java:1337)
-        at java.util.regex.Pattern.compile(Pattern.java:1022)
+
 
 
 public class Parser {

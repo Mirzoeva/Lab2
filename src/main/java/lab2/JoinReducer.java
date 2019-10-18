@@ -1,8 +1,7 @@
 package lab2;
 
 import org.apache.hadoop.mapreduce.Reducer;
-import org.w3c.dom.Text;
-
+import org.apache.hadoop.io.Text;
 import java.io.IOException;
 import java.util.Iterator;
 

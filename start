@@ -1,5 +1,6 @@
 mvn package
-hadoop fs -copyFromLocal resourse/664600583_T_ONTIME_sample.csv
+hadoop fs -copyFromLocal /Users/umamirzoeva/Parallel/Lab2/src/main/resources
+664600583_T_ONTIME_sample.csv
 hadoop fs -copyFromLocal L_AIRPORT_ID.csv
 export HADOOP_CLASSPATH=target/Lab2-1.0-SNAPSHOT.jar
 hadoop lab2.Main L_AIRPORT_ID.csv

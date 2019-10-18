@@ -5,8 +5,8 @@ public class ParserDelays {
 
     public ParserDelays(String str){
         String[] string = str.split(",[\"]");
-        for (int i = 0; i < cols.length; i++){
-            cols[i] = cols[i].replaceAll("\"", "");
+        for (int i = 0; i < string.length; i++){
+            string[i] = string[i].replaceAll("\"", "");
         }
         mainString = string;
     }

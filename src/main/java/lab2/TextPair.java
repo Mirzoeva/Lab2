@@ -33,11 +33,11 @@ public class TextPair implements WritableComparable<TextPair>{
     public Text getSecond() {
         return second;
     }
-
-    @Override
-    public int hashCode() {
-        return Integer.parseInt(first.toString());
-    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Integer.parseInt(first.toString());
+//    }
 
     @Override
     public boolean equals(Object obj) {

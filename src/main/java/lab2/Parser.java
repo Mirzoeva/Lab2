@@ -9,15 +9,11 @@ public class Parser {
     }
 
     public String getKey(){
-        if (mainString[0] != "")
-            return mainString[0];
-        return "0";
+        return mainString[0];
     }
 
     public String getValue(){
-        if (mainString[1] != "")
-            return mainString[1];
-        return "0";
+        return mainString[1];
     }
 
 }

@@ -11,10 +11,10 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
     protected void reduce(TextPair key, Iterable<Text> values, Context context) throws IOException, InterruptedException{
         Iterator<Text> iter = values.iterator();
         long count = 0;
-        Float correntTime;
-        Float maxTime = Float.MIN_VALUE;
-        Float minTime = Float.MAX_VALUE;
-        Float sum = 0.00f;
+        float correntTime;
+        float maxTime = Float.MIN_VALUE;
+        float minTime = Float.MAX_VALUE;
+        float sum = 0.00f;
         while (iter.hasNext()){
             String call = iter.next().toString();
             correntTime = Float.parseFloat(call);
@@ -26,7 +26,10 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
             count++;
         }
         if (count != 0){
-            context.write(key.getFirst(), new Text());
+            context.write(key.getFirst(), new Text(String.join(", ",
+                    String.valueOf(minTime),
+                    String.valueOf(maxTime),
+                    String.valueOf(sum / count))));
         }
     }
 }

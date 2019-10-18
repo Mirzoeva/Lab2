@@ -11,3 +11,7 @@ hadoop fs -copyToLocal output
 
 
 bash ~/.scripts/gitwatch.sh
+
+
+ssh localhost
+

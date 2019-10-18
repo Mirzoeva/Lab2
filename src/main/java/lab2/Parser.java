@@ -4,7 +4,7 @@ public class Parser {
     String[] mainString;
 
     public Parser(String str){
-        String[] string = str.split(",[\"]");
+        String[] string = str.split(",");
         mainString = string;
     }
 

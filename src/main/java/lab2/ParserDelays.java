@@ -11,6 +11,8 @@ public class ParserDelays {
         mainString = string;
     }
 
-    
+    public getKey(){
+        return ;
+    }
 
 }

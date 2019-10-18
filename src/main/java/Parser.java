@@ -11,8 +11,8 @@ public class Parser {
         String[] nextLine;
         while ((nextLine = reader.readNext()) != null) {
             if (nextLine != null) {
-                
-                String parts = Arrays.toString(nextLine).replaceAll("[^a-zA-Z0-9\\s+]", "");
+
+                String parts = nextLine.toString().replaceAll("[^a-zA-Z0-9\\s+]", "");
                 System.out.println(parts);
                 System.out.println("cust   " + parts );
 

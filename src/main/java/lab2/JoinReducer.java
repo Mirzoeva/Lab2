@@ -26,7 +26,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
             count++;
         }
         if (count != 0){
-            Text result = new Text(String.join(", " , String.valueOf(minTime), String.valueOf(maxTime), String.valueOf(sum / count)));
+            Text result = new Text("Min " + String.valueOf(minTime), String.valueOf(maxTime), String.valueOf(sum / count)));
             context.write(key.getFirst(), result);
         }
     }

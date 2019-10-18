@@ -4,6 +4,7 @@ import org.apache.hadoop.io.Text;
 
 
 public class FirstPartitioner extends HashPartitioner<FirstComparator, Text>{
+    @Override
     public int getPartition(Text key, Text value, int numReduceTasks){
         return (key.hashCode()&Integer.MAX_VALUE)% numReduceTasks;
     }

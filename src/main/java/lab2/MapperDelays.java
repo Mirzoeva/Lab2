@@ -9,10 +9,10 @@ import java.io.IOException;
 public class MapperDelays extends Mapper<LongWritable, Text, TextPair, Text> {
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        String time = new ParserDelays(value.toString()).getValue();
+        Integer time = new Integer(new ParserDelays(value.toString()).getValue());
         TextPair delay = new TextPair(new Text(new ParserDelays(value.toString()).getKey()), new Text("1"));
-        if ((new Integer)time > 0){
-            context.write(delay, new Text();
+        if (time > 0){
+            context.write(delay, new Text(time.toString()));
         }
     }
 }

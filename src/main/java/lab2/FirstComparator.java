@@ -4,7 +4,7 @@ import org.apache.hadoop.io.WritableComparator;
 
 public class FirstComparator extends WritableComparator {
     public FirstComparator(){
-        super();
+        super(TextPair.class);
     }
     public int compare(TextPair a, TextPair b){
         return a.compareTo(b);

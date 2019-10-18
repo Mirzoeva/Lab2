@@ -1,4 +1,4 @@
 package lab2;
 
-public class FirstPartition {
+public class FirstPartitioner {
 }

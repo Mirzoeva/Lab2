@@ -26,7 +26,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
             count++;
         }
         if (count != 0){
-            context.write(key.getFirst(), outValue);
+            context.write(key.getFirst(), new Text());
         }
     }
 }

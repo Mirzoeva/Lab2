@@ -16,7 +16,7 @@ public class Main {
         }
         Job job = Job.getInstance();
         job.setJarByClass(Main.class);
-        job.setJobName("JoinJob sort");
+        job.setJobName("Main sort");
         MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, MapperAiports.class);
         MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, MapperDelays.class);
         FileOutputFormat.setOutputPath(job, new Path(args[2]));

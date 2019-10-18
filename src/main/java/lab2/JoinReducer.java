@@ -17,7 +17,16 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         Float sum = 0.00f;
         while (iter.hasNext()){
             String call = iter.next().toString();
+            correntTime = Float.parseFloat(call);
+            if (correntTime > maxTime)
+                maxTime = correntTime;
+            if (correntTime < minTime)
+                minTime = correntTime;
+            sum += correntTime;
+            count++;
         }
-        context.write(key.getFirst(), outValue);
+        if (count != 0){
+            context.write(key.getFirst(), outValue);
+        }
     }
 }

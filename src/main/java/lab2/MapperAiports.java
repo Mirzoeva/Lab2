@@ -15,20 +15,3 @@ public class MapperAiports extends Mapper<LongWritable, Text, TextPair, Text> {
         context.write(new TextPair(system.getSystemCode().toString(),"0"), new Text(system.toString()));
     }
 }
-
-
-//
-//public class MapperAiports {
-//    public static void main(String[] args) throws Exception {
-//        CSVReader reader = new CSVReader(new FileReader("/Users/umamirzoeva/Parallel/Lab2/src/main/resources/L_AIRPORT_ID.csv"), ',' , '"' , 0);
-//        String[] nextLine;
-//        while ((nextLine = reader.readNext()) != null) {
-//            if (nextLine != null) {
-//                String[] parts = Arrays.toString(nextLine).split( ",");
-//                Arrays.toString(parts).split("\\[");
-//                System.out.println(parts[0] + "   aiport   " + parts[1]);
-//                //System.out.println(Arrays.toString(nextLine));
-//            }
-//        }
-//    }
-//}

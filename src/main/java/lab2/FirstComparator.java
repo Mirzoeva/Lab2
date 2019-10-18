@@ -8,6 +8,8 @@ public class FirstComparator extends WritableComparator {
     }
     @Override
     public int compare(WritableComparable a, WritableComparable b){
-        return a.compareTo(b);
+        TextPair a1 = (TextPair)a;
+        TextPair b1 = (TextPair)b;
+        return a1.getFirst().compareTo((b1).getFirst());
     }
 }

@@ -16,6 +16,7 @@ public class WritableAiports {
                 Arrays.toString(parts).split("\\[");
                 System.out.println(parts[0] + "   aiport   " + parts[1]);
                 //System.out.println(Arrays.toString(nextLine));
+                context.write(this.word, one);
             }
         }
     }

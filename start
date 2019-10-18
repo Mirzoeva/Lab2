@@ -1,3 +1,4 @@
+hdfs dfs -rm -r hdfs://localhost:9000/user/umamirzoeva/output
 mvn package
 hadoop fs -copyFromLocal /Users/umamirzoeva/Parallel/Lab2/src/main/resources/664600583_T_ONTIME_sample.csv
 hadoop fs -copyFromLocal /Users/umamirzoeva/Parallel/Lab2/src/main/resources/L_AIRPORT_ID.csv

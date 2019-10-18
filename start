@@ -7,7 +7,7 @@ hadoop fs -copyToLocal output
 
 
 
-
+hdfs dfs -rm -r hdfs://localhost:9000/user/umamirzoeva/output
 
 bash ~/.scripts/gitwatch.sh
 

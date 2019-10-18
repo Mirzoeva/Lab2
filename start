@@ -6,3 +6,8 @@ hadoop reducesidejoin.ReduceSideJoin L_AIRPORT_ID.csv
 664600583_T_ONTIME_sample.csv output
 hadoop fs -copyToLocal output
 
+
+
+
+
+bash ~/.scripts/gitwatch.sh

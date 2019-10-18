@@ -16,20 +16,22 @@ public class Parser {
         String[] nextLine;
         while ((nextLine = reader.readNext()) != null) {
             if (nextLine != null) {
-                String[] parts = nextLine.split(",");
-                context.write(new Text(parts[0]), new Text("cust   " + parts[1]));
+                String[] parts = nextLine.toString().split(",");
+                System.out.println(parts[0]);
+                System.out.println("cust   " + parts[1] );
+
                 //Verifying the read data here
-                System.out.println(Arrays.toString(nextLine));
+                //System.out.println(Arrays.toString(nextLine));
             }
         }
-        CSVReader reader2 = new CSVReader(new FileReader("/Users/umamirzoeva/Parallel/Lab2/src/main/resources/664600583_T_ONTIME_sample.csv"), ',' , '"' , 0);
-        //Read CSV line by line and use the string array as you want
-        String[] nextLine2;
-        while ((nextLine2 = reader2.readNext()) != null) {
-            if (nextLine2 != null) {
-                //Verifying the read data here
-                System.out.println(Arrays.toString(nextLine2));
-            }
-        }
+//        CSVReader reader2 = new CSVReader(new FileReader("/Users/umamirzoeva/Parallel/Lab2/src/main/resources/664600583_T_ONTIME_sample.csv"), ',' , '"' , 0);
+//        //Read CSV line by line and use the string array as you want
+//        String[] nextLine2;
+//        while ((nextLine2 = reader2.readNext()) != null) {
+//            if (nextLine2 != null) {
+//                //Verifying the read data here
+//                System.out.println(Arrays.toString(nextLine2));
+//            }
+//        }
     }
 }

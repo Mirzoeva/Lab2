@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49792a2e-aa84-456c-87dd-2f69ad74bba6" name="Default Changelist" comment="" />
+    <list default="true" id="49792a2e-aa84-456c-87dd-2f69ad74bba6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab2/MapperDelays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab2/MapperDelays.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/lab2/MapperDelays.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="165">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,7 +124,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/start">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -157,10 +159,10 @@
         <option value="$PROJECT_DIR$/src/main/java/lab2/FirstPartitioner.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/lab2/Parser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab2/MapperDelays.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab2/FirstComparator.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab2/ParserDelays.java" />
         <option value="$PROJECT_DIR$/start" />
+        <option value="$PROJECT_DIR$/src/main/java/lab2/MapperDelays.java" />
       </list>
     </option>
   </component>
@@ -226,7 +228,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571436484888" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571436493238" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -269,12 +271,12 @@
       <updated>1571064045876</updated>
       <workItem from="1571064048491" duration="4811000" />
       <workItem from="1571151041192" duration="1171000" />
-      <workItem from="1571308019130" duration="21759000" />
+      <workItem from="1571308019130" duration="21983000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27741000" />
+    <option name="totallyTimeSpent" value="27965000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -286,10 +288,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="802" y="0" width="638" height="900" extended-state="6" />
+    <frame x="363" y="0" width="1077" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5184564" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.109178744" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -404,16 +406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab2/MapperDelays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab2/TextPair.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -464,6 +456,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab2/MapperDelays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

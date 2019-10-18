@@ -13,10 +13,10 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         long count = 0;
         Float correntTime;
         Float maxTime = Float.MIN_VALUE;
-        Float minTime = Float.MAX_VALUE
+        Float minTime = Float.MAX_VALUE;
+
         while (iter.hasNext()){
             String call = iter.next().toString();
-            Text outValue = new Text(call.toString() + "\t" + systemInfo.toString());
         }
         context.write(key.getFirst(), outValue);
     }

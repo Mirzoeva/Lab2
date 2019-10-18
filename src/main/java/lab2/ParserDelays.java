@@ -13,7 +13,7 @@ public class ParserDelays {
     }
 
     public String getValue(){
-        if (!mainString[18].isEmpty())
+        if (mainString.length > 19 && !mainString[18].isEmpty())
             return mainString[18];
         else
             return String.valueOf(0.0);

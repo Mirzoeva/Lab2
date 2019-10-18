@@ -7,6 +7,7 @@ public class FirstComparator extends WritableComparator {
     @Override
     public int compare(TextPair a, TextPair b){
         //
+        return 
 
     }
 }

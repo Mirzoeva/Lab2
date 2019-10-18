@@ -12,9 +12,11 @@ public class Parser {
         while ((nextLine = reader.readNext()) != null) {
             if (nextLine != null) {
 
-                String parts = Arrays.toString(nextLine).split( ",");
-                System.out.println(parts);
-                System.out.println("cust   " + parts );
+                String[] parts = Arrays.toString(nextLine).split( ",");
+                Arrays.toString(parts).split("]");
+                Arrays.toString(parts).split("[");
+                System.out.println(parts[0]);
+                System.out.println("cust   " + parts[1] );
 
                 //Verifying the read data here
                 //System.out.println(Arrays.toString(nextLine));

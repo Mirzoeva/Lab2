@@ -1,9 +1,6 @@
 package lab2;
 
-import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
-import au.com.bytecode.opencsv.CSVReader;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.io.LongWritable;

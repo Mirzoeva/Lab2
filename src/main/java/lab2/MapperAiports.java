@@ -16,15 +16,6 @@ public class SystemsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text
     }
 }
 
-public class MapperAiports extends Mapper<LongWritable, Text, TextPair, Text> {
-    @Override
-    protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        ServiceCall call = new ServiceCall(value);
-        context.write(new TextPair(call.getSystemA().toString(),"1"),
-                new Text(call.toString()));
-    }
-}
-
 public class MapperAiports {
     public static void main(String[] args) throws Exception {
         CSVReader reader = new CSVReader(new FileReader("/Users/umamirzoeva/Parallel/Lab2/src/main/resources/L_AIRPORT_ID.csv"), ',' , '"' , 0);

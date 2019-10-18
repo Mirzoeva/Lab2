@@ -6,7 +6,7 @@ public class FirstComparator extends WritableComparator {
         super(TextPair.class, true);
     }
     @Override
-    public int compare(TextPair a, TextPair b){
+    public int compare(WritableComparable a, WritableComparable b){
         return a.compareTo(b);
     }
 }

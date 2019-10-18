@@ -7,6 +7,8 @@ import java.security.Key;
 public class FirstPartitioner extends Partitioner<Key, Value> {
     public FirstPartitioner(){}
     @Override
-    public int getPartition()
+    public int getPartition(Key key, Value value, int numReduceTasks){
+        return (key.hashCode()&Integer.MAX_VALUE)% numReduceTasks;
+    }
 
 }

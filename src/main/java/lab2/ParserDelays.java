@@ -15,11 +15,11 @@ public class ParserDelays {
         return mainString[14];
     }
 
-    public int getValue(){
+    public String getValue(){
 
         if (mainString[18] != "")
-            return new Integer(mainString[18]);
-        else return 0;
+            return mainString[18];
+        else return new String("0");
     }
 
 }

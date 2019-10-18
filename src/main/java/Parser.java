@@ -18,7 +18,7 @@ public class Parser {
             if (nextLine != null) {
                 String[] parts = nextLine.toString().split(",");
                 System.out.println(parts[0]);
-                System.out.println("cust   " + parts[1] );
+             //   System.out.println("cust   " + parts[1] );
 
                 //Verifying the read data here
                 //System.out.println(Arrays.toString(nextLine));

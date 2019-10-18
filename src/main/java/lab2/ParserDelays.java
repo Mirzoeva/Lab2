@@ -17,7 +17,9 @@ public class ParserDelays {
 
     public String getValue(){
 
-        if ()return mainString[18];
+        if (mainString[18] != "")
+            return mainString[18];
+        else return 0;
     }
 
 }

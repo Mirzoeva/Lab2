@@ -2,7 +2,7 @@ package lab2;
 
 import org.apache.hadoop.io.Text;
 
-public class FirstComparator extends Text.Comparator {
+public class FirstComparator extends WritableComparator {
     public FirstComparator(){
         super(TextPair.class, true);
     }

@@ -1,8 +1,8 @@
 package lab2;
 
 public class ParserDelays {
-    public ParserDelays(String str){
-
+    public static String[] ParserDelays(String str){
+        
     }
 
 }

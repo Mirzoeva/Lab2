@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49792a2e-aa84-456c-87dd-2f69ad74bba6" name="Default Changelist" comment="" />
+    <list default="true" id="49792a2e-aa84-456c-87dd-2f69ad74bba6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab2/FirstComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab2/FirstComparator.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,10 +61,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/lab2/FirstComparator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#230#231#0" expanded="true" />
+                <element signature="e#267#268#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,11 +144,11 @@
         <option value="$PROJECT_DIR$/src/main/java/lab2/TextPair.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab2/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab2/FirstPartitioner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab2/FirstComparator.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab2/JoinReduser.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab2/MapperAiports.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab2/Parser.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab2/MapperDelays.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab2/FirstComparator.java" />
       </list>
     </option>
   </component>
@@ -211,7 +214,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571422219370" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571422232516" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -254,12 +257,12 @@
       <updated>1571064045876</updated>
       <workItem from="1571064048491" duration="4811000" />
       <workItem from="1571151041192" duration="1171000" />
-      <workItem from="1571308019130" duration="11614000" />
+      <workItem from="1571308019130" duration="11778000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17596000" />
+    <option name="totallyTimeSpent" value="17760000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -359,22 +362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab2/TextPair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab2/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -402,16 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab2/FirstPartitioner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab2/MapperDelays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -422,12 +399,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab2/FirstComparator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab2/TextPair.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="510">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab2/FirstPartitioner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab2/FirstComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
           </folding>
         </state>
       </provider>

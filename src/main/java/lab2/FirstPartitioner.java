@@ -1,6 +1,6 @@
 package lab2;
 import org.apache.hadoop.mapreduce.lib.partition.HashPartitioner;
-import org.w3c.dom.Text;
+import org.apache.hadoop.io.Text;
 
 
 public class FirstPartitioner extends HashPartitioner<FirstComparator, Text>{

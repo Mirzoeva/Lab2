@@ -12,7 +12,11 @@ public class ParserDelays {
     }
 
     public String getKey(){
-        return mainString[];
+        return mainString[14];
+    }
+
+    public String getValue(){
+        return mainString[18];
     }
 
 }

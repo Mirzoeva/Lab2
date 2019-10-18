@@ -8,7 +8,7 @@ import org.apache.hadoop.io.LongWritable;
 public class MapperAiports extends Mapper<LongWritable, Text, TextPair, Text> {
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        TextPair aiport = new TextPair(new ParserDelays(value.toString()).getKey(), 0);
-        context.write(aiport, new ParserDelays(value.toString()).getValue());
+        TextPair aiport = new TextPair(new Parser(value.toString()).getKey(), "0");
+        context.write(aiport, new Text(new Parser(value.toString()).getValue()));
     }
 }

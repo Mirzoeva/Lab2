@@ -13,6 +13,7 @@ public class MapperDelays extends Mapper<LongWritable, Text, TextPair, Text> {
             return;
         }
         float time = Float.parseFloat(new ParserDelays(value.toString()).getValue());
+        System.out.println(time + "\n");
         TextPair delay = new TextPair(new Text(new ParserDelays(value.toString()).getKey()), new Text("1"));
         if (time > 0){
             context.write(delay, new Text(String.valueOf(time)));

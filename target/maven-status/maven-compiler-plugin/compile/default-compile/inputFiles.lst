@@ -1,1 +1,9 @@
-/Users/umamirzoeva/Parallel/Lab2/src/main/java/Parser.java
+/Users/umamirzoeva/Parallel/Lab2/src/main/java/lab2/Parser.java
+/Users/umamirzoeva/Parallel/Lab2/src/main/java/lab2/TextPair.java
+/Users/umamirzoeva/Parallel/Lab2/src/main/java/lab2/Main.java
+/Users/umamirzoeva/Parallel/Lab2/src/main/java/lab2/ParserDelays.java
+/Users/umamirzoeva/Parallel/Lab2/src/main/java/lab2/FirstPartitioner.java
+/Users/umamirzoeva/Parallel/Lab2/src/main/java/lab2/MapperAiports.java
+/Users/umamirzoeva/Parallel/Lab2/src/main/java/lab2/MapperDelays.java
+/Users/umamirzoeva/Parallel/Lab2/src/main/java/lab2/JoinReducer.java
+/Users/umamirzoeva/Parallel/Lab2/src/main/java/lab2/FirstComparator.java

@@ -13,7 +13,6 @@ public class Main {
             System.err.println("Usage: WordCountApp <input path> <output path>");
             System.exit(-1);
         }
-
         Job job = Job.getInstance();
         job.setJarByClass(JoinJob.class);
         job.setJobName("JoinJob sort");

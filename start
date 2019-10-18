@@ -13,7 +13,9 @@ bash ~/.scripts/gitwatch.sh
 
 jps
 
+
 ssh localhost
+hdfs namenode -format
 start-dfs.sh
 start-yarn.sh
 

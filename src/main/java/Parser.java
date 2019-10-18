@@ -14,7 +14,6 @@ public class Parser {
 
                 String[] parts = Arrays.toString(nextLine).split( ",");
                 Arrays.toString(parts).split("]");
-                Arrays.toString(parts).split("[");
                 System.out.println(parts[0]);
                 System.out.println("cust   " + parts[1] );
 

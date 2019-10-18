@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49792a2e-aa84-456c-87dd-2f69ad74bba6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/start" beforeDir="false" afterPath="$PROJECT_DIR$/start" afterDir="false" />
-    </list>
+    <list default="true" id="49792a2e-aa84-456c-87dd-2f69ad74bba6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,8 +101,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/start">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="255">
+              <caret line="17" column="6" selection-start-line="17" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -231,7 +229,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571428686117" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571428702348" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -274,12 +272,12 @@
       <updated>1571064045876</updated>
       <workItem from="1571064048491" duration="4811000" />
       <workItem from="1571151041192" duration="1171000" />
-      <workItem from="1571308019130" duration="17403000" />
+      <workItem from="1571308019130" duration="17572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23385000" />
+    <option name="totallyTimeSpent" value="23554000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,8 +471,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/start">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="255">
+          <caret line="17" column="6" selection-start-line="17" selection-end-line="18" />
         </state>
       </provider>
     </entry>

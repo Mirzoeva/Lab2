@@ -1,5 +1,7 @@
 package lab2;
 
 public class Parser {
-    public Parser(sti)
+    public Parser(String str){
+        
+    }
 }

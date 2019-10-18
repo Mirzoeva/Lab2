@@ -14,6 +14,8 @@ public class Parser {
 
                 String[] parts = Arrays.toString(nextLine).split( ",");
                 Arrays.toString(parts).split("]");
+                Arrays.toString(parts).split('[');
+
                 System.out.println(parts[0] + "   aiport   " + parts[1]);
                 //System.out.println(Arrays.toString(nextLine));
             }

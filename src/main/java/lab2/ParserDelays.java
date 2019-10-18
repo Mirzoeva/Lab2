@@ -9,7 +9,10 @@ public class ParserDelays {
     }
 
     public String getKey(){
+        if (mainString.length > 15 && !mainString[14].isEmpty())
             return mainString[14];
+        else
+            return String.valueOf(0.0);
     }
 
     public String getValue(){

@@ -27,7 +27,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         }
         if (count != 0){
             int average = sum/count;
-            context.write(key.getFirst(), new Text("Min: " + minTime + "Max: " + maxTime + "Average: " + average));
+            context.write(key.getFirst(), new Text("Min: " + minTime + ", Max: " + maxTime + ", Average: " + average));
         }
     }
 }

@@ -12,7 +12,6 @@ public class MapperAiports extends Mapper<LongWritable, Text, TextPair, Text> {
             return;
         }
         TextPair aiport = new TextPair(new Parser(value.toString()).getKey(), "0");
-        if (!aiport.getFirst().equals("0.0"))
-            context.write(aiport, new Text(new Parser(value.toString()).getValue()));
+        context.write(aiport, new Text(new Parser(value.toString()).getValue()));
     }
 }

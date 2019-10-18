@@ -12,7 +12,7 @@ public class Parser {
         while ((nextLine = reader.readNext()) != null) {
             if (nextLine != null) {
 
-                String parts = Arrays.toString(nextLine).replaceAll("[^a-zA-Z0-9\\s+]", "");
+                String parts = Arrays.toString(nextLine).split( ",");
                 System.out.println(parts);
                 System.out.println("cust   " + parts );
 

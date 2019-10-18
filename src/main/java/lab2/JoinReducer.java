@@ -11,13 +11,13 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
     protected void reduce(TextPair key, Iterable<Text> values, Context context) throws IOException, InterruptedException{
         Iterator<Text> iter = values.iterator();
         long count = 0;
-        float correntTime;
-        float maxTime = Float.MIN_VALUE;
-        float minTime = Float.MAX_VALUE;
-        float sum = 0.00f;
+        int correntTime;
+        int maxTime = Integer.MIN_VALUE;
+        int minTime = Integer.MAX_VALUE;
+        int sum = 0;
         while (iter.hasNext()){
             String call = iter.next().toString();
-            correntTime = Float.parseFloat(call);
+            correntTime = Integer.parseInt(call);
             if (correntTime > maxTime)
                 maxTime = correntTime;
             if (correntTime < minTime)
@@ -26,10 +26,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
             count++;
         }
         if (count != 0){
-            context.write(key.getFirst(), new Text(String.join(", ",
-                    String.valueOf(minTime),
-                    String.valueOf(maxTime),
-                    String.valueOf(sum / count))));
+            context.write(key.getFirst(), new Text(String.join(", ", String.valueOf(minTime), String.valueOf(maxTime), String.valueOf(sum / count))));
         }
     }
 }

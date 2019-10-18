@@ -12,6 +12,7 @@ hadoop fs -copyToLocal output
 
 bash ~/.scripts/gitwatch.sh
 
+jps
 
 ssh localhost
 start-dfs.sh

@@ -1,5 +1,5 @@
 package lab2;
-import org.apache.hadoop.mapreduce.lib.partition.Partitioner;
+import org.apache.hadoop.mapreduce.Partitioner;
 import org.apache.hadoop.io.Text;
 
 

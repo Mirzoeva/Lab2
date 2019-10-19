@@ -5,6 +5,9 @@ public class Parser {
 
     public Parser(String str){
         String[] string = str.split("\"");
+        for (int i = 0; i < cols.length; i++){
+            cols[i] = cols[i].replaceAll("\"", "");
+        }
         mainString = string;
     }
 

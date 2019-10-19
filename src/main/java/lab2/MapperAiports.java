@@ -15,6 +15,6 @@ public class MapperAiports extends Mapper<LongWritable, Text, TextPair, Text> {
         System.out.println(aiport);
 
         // System.out.println("AIR" + new Text(new Parser(value.toString()).getValue()));
-        context.write(aiport.getFirst(), new Text(new Parser(value.toString()).getValue()));
+        context.write(aiport, new Text(new Parser(value.toString()).getValue()));
     }
 }

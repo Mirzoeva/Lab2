@@ -1,7 +1,7 @@
 package lab2;
 
 public class ParserDelays {
-    String[] mainString;
+    private String[] mainString;
 
     public ParserDelays(String str){
         String[] string = str.split(",");

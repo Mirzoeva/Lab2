@@ -1,7 +1,7 @@
 package lab2;
 
 public class Parser {
-    String[] mainString;
+    private String[] mainString;
 
     public Parser(String str){
         String[] string = str.split(",");

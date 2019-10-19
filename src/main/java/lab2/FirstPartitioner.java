@@ -6,6 +6,7 @@ import org.apache.hadoop.io.Text;
 public class FirstPartitioner extends Partitioner<TextPair, Text>{
     @Override
     public int getPartition(TextPair key, Text value, int numReduceTasks){
+        System.out.println(key.getFirst().hashCode() + "\n");
         return (key.getFirst().hashCode()&Integer.MAX_VALUE)% numReduceTasks;
     }
 }

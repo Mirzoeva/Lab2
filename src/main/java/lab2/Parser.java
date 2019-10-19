@@ -5,9 +5,8 @@ public class Parser {
 
     public Parser(String str){
         System.out.println("-------------------------------");
-        String[] string = str.split(",");
+        String[] string = str.split(",[\"]");
         for (int i = 0; i < string.length; i++){
-            string[i] = string[i].replaceAll("\"", "");
             System.out.println("SUKA" + string[i] + "\n");
         }
         mainString = string;

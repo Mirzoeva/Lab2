@@ -5,9 +5,9 @@ public class ParserDelays {
 
     public ParserDelays(String str){
         String[] string = str.split(",[\"]");
-        for (int i = 0; i < string.length; i++){
-            System.out.println("SUKA" + string[i] + "\n");
-        }
+//        for (int i = 0; i < string.length; i++){
+//            System.out.println("SUKA" + string[i] + "\n");
+//        }
         mainString = string;
     }
 

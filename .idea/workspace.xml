@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49792a2e-aa84-456c-87dd-2f69ad74bba6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab2/FirstPartitioner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab2/FirstPartitioner.java" afterDir="false" />
-    </list>
+    <list default="true" id="49792a2e-aa84-456c-87dd-2f69ad74bba6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,18 +23,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/start">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret selection-end-line="6" selection-end-column="29" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/output/part-r-00000">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -51,7 +44,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lab2/FirstPartitioner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -100,16 +93,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lab2/TextPair.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+            <state relative-caret-position="219">
+              <caret line="36" selection-start-line="36" selection-end-line="39" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#655#656#0" expanded="true" />
                 <element signature="e#683#684#0" expanded="true" />
                 <element signature="e#714#715#0" expanded="true" />
                 <element signature="e#743#744#0" expanded="true" />
-                <element signature="e#786#787#0" expanded="true" />
-                <element signature="e#843#844#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,11 +167,6 @@
             <path>
               <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lab2" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -215,7 +201,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571476904807" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571476907967" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -258,12 +244,12 @@
       <updated>1571064045876</updated>
       <workItem from="1571064048491" duration="4811000" />
       <workItem from="1571151041192" duration="1171000" />
-      <workItem from="1571308019130" duration="28383000" />
+      <workItem from="1571308019130" duration="28626000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34365000" />
+    <option name="totallyTimeSpent" value="34608000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -278,7 +264,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.080829754" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28969958" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -383,13 +369,6 @@
     <entry file="file://$PROJECT_DIR$/output/_SUCCESS">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/start">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab2/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -446,16 +425,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab2/TextPair.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+        <state relative-caret-position="219">
+          <caret line="36" selection-start-line="36" selection-end-line="39" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#655#656#0" expanded="true" />
             <element signature="e#683#684#0" expanded="true" />
             <element signature="e#714#715#0" expanded="true" />
             <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -467,6 +444,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="29" />
         </state>
       </provider>
     </entry>

@@ -34,10 +34,10 @@ public class TextPair implements WritableComparable<TextPair>{
         return second;
     }
 
-    @Override
-    public int hashCode() {
-        return Integer.parseInt(first.toString());
-    }
+//    @Override
+//    public int hashCode() {
+//        return Integer.parseInt(first.toString());
+//    }
 
     @Override
     public boolean equals(Object obj) {

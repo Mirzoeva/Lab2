@@ -4,7 +4,7 @@ public class ParserDelays {
     private String[] mainString;
 
     public ParserDelays(String str){
-        String[] string = str.split(",");
+        String[] string = str.split("\"");
         mainString = string;
     }
 

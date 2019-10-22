@@ -63,7 +63,7 @@ public class TextPair implements WritableComparable<TextPair>{
 
     @Override
     public int compareTo(TextPair tp) {
-        int cmp=first.compareTo(tp.getFirst());
+        int cmp=second.compareTo(tp.getSecond());
             return cmp;
 
     }

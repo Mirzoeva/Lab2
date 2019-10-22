@@ -36,6 +36,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
             count++;
         }
 
+        System.out.println(s);
         if (t){
             return;
         }

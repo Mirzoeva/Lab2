@@ -68,4 +68,8 @@ public class TextPair implements WritableComparable<TextPair>{
 
     }
 
+    @Override
+    public String toString() {
+        return first.toString()+"_"+second.toString();
+    }
 }

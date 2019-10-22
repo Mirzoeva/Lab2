@@ -9,27 +9,31 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
     @Override
     protected void reduce(TextPair key, Iterable<Text> values, Context context) throws IOException, InterruptedException{
         Iterator<Text> iter = values.iterator();
+        StringBuilder s = new StringBuilder("FUCK THIS\n");
+
         int count = 0;
         float maxTime = Integer.MIN_VALUE;
         float minTime = Integer.MAX_VALUE;
         float sum = 0;
         Text airport = new Text(iter.next().toString() + ",");
-        try {
+        s= s.append(airport);
             while (iter.hasNext()){
                 String call = iter.next().toString();
-                float correntTime;
+                try {
+
+                    float correntTime;
                 correntTime = Float.parseFloat(call);
                 if (correntTime > maxTime)
                     maxTime = correntTime;
                 if (correntTime < minTime)
                     minTime = correntTime;
                 sum += correntTime;
+                }
                 count++;
             }
         } catch (NumberFormatException e){
             Iterator<Text> piter = values.iterator();
-            StringBuilder s = new StringBuilder("FUCK THIS\n");
-            piter.forEachRemaining(f -> s.append(f+"\n"));
+            piter.(f -> s.append(f+"\n"));
             System.out.println(s);
             return;
         }

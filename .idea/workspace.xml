@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49792a2e-aa84-456c-87dd-2f69ad74bba6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab2/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab2/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lab2/ParserDelays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab2/ParserDelays.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,18 +62,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lab2/FirstPartitioner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lab2/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -89,8 +76,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/lab2/ParserDelays.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+            <state relative-caret-position="465">
+              <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -142,7 +138,6 @@
         <option value="$PROJECT_DIR$/src/main/java/lab2/WritableAiports.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab2/JoinReduser.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/start" />
         <option value="$PROJECT_DIR$/src/main/java/lab2/JoinReducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab2/FirstPartitioner.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab2/TextPair.java" />
@@ -151,6 +146,7 @@
         <option value="$PROJECT_DIR$/src/main/java/lab2/MapperAiports.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab2/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab2/Parser.java" />
+        <option value="$PROJECT_DIR$/start" />
         <option value="$PROJECT_DIR$/src/main/java/lab2/ParserDelays.java" />
       </list>
     </option>
@@ -180,11 +176,6 @@
             <path>
               <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lab2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab2" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Lab2" type="b2602c69:ProjectViewProjectNode" />
@@ -229,7 +220,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571744368695" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571744430780" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -273,12 +264,12 @@
       <workItem from="1571064048491" duration="4811000" />
       <workItem from="1571151041192" duration="1171000" />
       <workItem from="1571308019130" duration="32214000" />
-      <workItem from="1571743419971" duration="822000" />
+      <workItem from="1571743419971" duration="1204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39018000" />
+    <option name="totallyTimeSpent" value="39400000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -401,13 +392,6 @@
     <entry file="file://$PROJECT_DIR$/output/part-r-00001">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/start">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="15" selection-start-line="6" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab2/FirstPartitioner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -489,10 +473,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/start">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab2/ParserDelays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        <state relative-caret-position="465">
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
         </state>
       </provider>
     </entry>

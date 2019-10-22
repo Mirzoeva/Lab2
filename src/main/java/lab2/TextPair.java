@@ -36,11 +36,6 @@ public class TextPair implements WritableComparable<TextPair>{
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(first, second);
-    }
-
-    @Override
     public boolean equals(Object obj) {
         if(obj instanceof TextPair){
             TextPair tp=(TextPair)obj;

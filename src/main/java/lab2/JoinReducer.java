@@ -21,7 +21,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         s = s.append(airport);
         while (iter.hasNext()) {
             String call = iter.next().toString();
-            s = s.append(call);
+            s = s.append("call: " +call+"\n");
             try {
                 float correntTime;
                 correntTime = Float.parseFloat(call);

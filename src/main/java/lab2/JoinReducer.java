@@ -18,32 +18,31 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         float sum = 0;
         boolean t  = false;
         Text airport = new Text(iter.next().toString() + ",");
-        throw  new IOException(airport.toString());
-//        s = s.append(airport);
-//        while (iter.hasNext()) {
-//            String call = iter.next().toString();
-//            s = s.append("call: " +call+"\n");
-//            try {
-//                float correntTime;
-//                correntTime = Float.parseFloat(call);
-//                if (correntTime > maxTime)
-//                    maxTime = correntTime;
-//                if (correntTime < minTime)
-//                    minTime = correntTime;
-//                sum += correntTime;
-//            } catch (NumberFormatException e) {
-//                throw new IOException(airport+"-<>-"+call);
-//            }
-//            count++;
-//        }
-//
-//        System.out.println(s);
-//        if (t){
-//            return;
-//        }
-//        if (count != 0) {
-//            float average = sum / count;
-//            context.write(airport, new Text("Min: " + minTime + ", Max: " + maxTime + ", Average: " + average));
-//        }
+        s = s.append(airport);
+        while (iter.hasNext()) {
+            String call = iter.next().toString();
+            s = s.append("call: " +call+"\n");
+            try {
+                float correntTime;
+                correntTime = Float.parseFloat(call);
+                if (correntTime > maxTime)
+                    maxTime = correntTime;
+                if (correntTime < minTime)
+                    minTime = correntTime;
+                sum += correntTime;
+            } catch (NumberFormatException e) {
+                throw new IOException(airport+"-<>-"+call);
+            }
+            count++;
+        }
+
+        System.out.println(s);
+        if (t){
+            return;
+        }
+        if (count != 0) {
+            float average = sum / count;
+            context.write(new Text(s.toString()), new Text("Min: " + minTime + ", Max: " + maxTime + ", Average: " + average));
+        }
     }
 }

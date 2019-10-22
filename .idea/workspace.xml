@@ -65,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/lab2/TextPair.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="563">
-              <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
+              <caret line="65" column="21" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#655#656#0" expanded="true" />
@@ -219,7 +219,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571746759504" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571746761619" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -263,12 +263,12 @@
       <workItem from="1571064048491" duration="4811000" />
       <workItem from="1571151041192" duration="1171000" />
       <workItem from="1571308019130" duration="32214000" />
-      <workItem from="1571743419971" duration="3308000" />
+      <workItem from="1571743419971" duration="3345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41504000" />
+    <option name="totallyTimeSpent" value="41541000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,7 +473,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/lab2/TextPair.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
-          <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
+          <caret line="65" column="21" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#655#656#0" expanded="true" />

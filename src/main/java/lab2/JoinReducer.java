@@ -26,7 +26,13 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
                 sum += correntTime;
                 count++;
             }
-        } catch ()
+        } catch (NumberFormatException e){
+            Iterator<Text> piter = values.iterator();
+            StringBuilder s = new StringBuilder("FUCK THIS\n");
+            piter.forEachRemaining(f -> s.append(f+"\n"));
+            System.out.println(s);
+            return;
+        }
 
         if (count != 0){
             float average = sum/count;

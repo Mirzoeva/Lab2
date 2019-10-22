@@ -16,11 +16,13 @@ public class Parser {
     }
 
     public String getKey(){
-            return mainString[0];
+        System.out.println("Parser, Key"+mainString[0]);
+        return mainString[0];
     }
 
     public String getValue(){
-            return mainString[1];
+        System.out.println("Parser, Value"+mainString[1]);
+        return mainString[1];
     }
 
 }

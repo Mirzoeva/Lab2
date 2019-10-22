@@ -12,17 +12,25 @@ public class ParserDelays {
     }
 
     public String getKey(){
+        String res;
         if (mainString.length > 15 && !mainString[14].isEmpty())
-            return mainString[14];
+            res = mainString[14];
         else
-            return "";
+            res = "";
+
+        System.out.println("ParserDel, Key"+res);
+        return res;
     }
 
     public String getValue(){
+        String res;
         if (mainString.length > 19 && !mainString[18].isEmpty())
-            return mainString[18];
+            res = mainString[18];
         else
-            return "";
+            res = "";
+
+        System.out.println("ParserDel, Key"+res);
+        return res;
     }
 
 }

@@ -31,7 +31,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
                     minTime = correntTime;
                 sum += correntTime;
             } catch (NumberFormatException e) {
-                throw IOException(airport)
+                throw new IOException(airport+"-<>-"+call);
             }
             count++;
         }

@@ -13,6 +13,7 @@ public class MapperAiports extends Mapper<LongWritable, Text, TextPair, Text> {
         }
         TextPair aiport = new TextPair(new Parser(value.toString()).getKey(), "0");
         //System.out.println("AIR" + new Text(new Parser(value.toString()).getValue()));
+        System.out.println("Mapping aiport: "+aiport);
         context.write(aiport, new Text(new Parser(value.toString()).getValue()));
     }
 }

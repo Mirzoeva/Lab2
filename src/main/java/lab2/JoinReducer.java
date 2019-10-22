@@ -42,7 +42,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         }
         if (count != 0) {
             float average = sum / count;
-            context.write(new Text(s.toString()), new Text("Min: " + minTime + ", Max: " + maxTime + ", Average: " + average));
+            context.write(airport, new Text("Min: " + minTime + ", Max: " + maxTime + ", Average: " + average));
         }
     }
 }

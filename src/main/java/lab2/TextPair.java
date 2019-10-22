@@ -3,6 +3,7 @@ package lab2;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
+import java.util.Objects;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.WritableComparable;
@@ -36,7 +37,7 @@ public class TextPair implements WritableComparable<TextPair>{
 
     @Override
     public int hashCode() {
-        return Integer.parseInt(first.toString());
+        return Objects.hash(first, second);
     }
 
     @Override
@@ -61,12 +62,7 @@ public class TextPair implements WritableComparable<TextPair>{
     }
 
 
-    @Override
-    public int compareTo(TextPair tp) {
-        int cmp=first.compareTo(tp.getFirst());
-            return cmp;
 
-    }
 
     @Override
     public String toString() {

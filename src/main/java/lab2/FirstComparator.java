@@ -10,6 +10,7 @@ public class FirstComparator extends WritableComparator {
     public int compare(WritableComparable a, WritableComparable b){
         TextPair a1 = (TextPair)a;
         TextPair b1 = (TextPair)b;
-        return a1.compareTo(b1);
+
+        return a1.getSecond().compareTo(b1.getSecond());
     }
 }

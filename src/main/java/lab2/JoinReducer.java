@@ -16,10 +16,12 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         float maxTime = Integer.MIN_VALUE;
         float minTime = Integer.MAX_VALUE;
         float sum = 0;
+        boolean t  = false;
         Text airport = new Text(iter.next().toString() + ",");
         s = s.append(airport);
         while (iter.hasNext()) {
             String call = iter.next().toString();
+            s = s.append(call);
             try {
                 float correntTime;
                 correntTime = Float.parseFloat(call);
@@ -28,11 +30,15 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
                 if (correntTime < minTime)
                     minTime = correntTime;
                 sum += correntTime;
-            } catch (NumberFormatException e) {}
+            } catch (NumberFormatException e) {
+                t = true;
+            }
             count++;
         }
 
-
+        if (t){
+            return;
+        }
         if (count != 0) {
             float average = sum / count;
             context.write(airport, new Text("Min: " + minTime + ", Max: " + maxTime + ", Average: " + average));

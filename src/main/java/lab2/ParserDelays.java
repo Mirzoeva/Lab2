@@ -8,7 +8,9 @@ public class ParserDelays {
 //        for (int i = 0; i < string.length; i++){
 //            System.out.println("SUKA" + string[i] + "\n");
 //        }
-       
+//        for(int i = 0; i < string.length; i++){
+//            string[i] = string[i]("s")
+//        }
         mainString = string;
     }
 

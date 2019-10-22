@@ -35,14 +35,14 @@ public class TextPair implements WritableComparable<TextPair>{
         return second;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if(obj instanceof TextPair){
-            TextPair tp=(TextPair)obj;
-            return first.equals(tp.getFirst()) && second.equals(tp.getSecond());
-        }
-        return false;
-    }
+//    @Override
+//    public boolean equals(Object obj) {
+//        if(obj instanceof TextPair){
+//            TextPair tp=(TextPair)obj;
+//            return first.equals(tp.getFirst()) && second.equals(tp.getSecond());
+//        }
+//        return false;
+//    }
 
     @Override
     public void readFields(DataInput in) throws IOException {
@@ -62,7 +62,7 @@ public class TextPair implements WritableComparable<TextPair>{
         if (f == 0){
             return second.compareTo(o.getSecond());
         }
-        return 0;
+        return f;
     }
 
     @Override

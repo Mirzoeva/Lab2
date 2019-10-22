@@ -23,8 +23,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
             String call = iter.next().toString();
             s = s.append("call: " +call+"\n");
             try {
-                float correntTime;
-                correntTime = Float.parseFloat(call);
+                float correntTime = Float.parseFloat(call);
                 if (correntTime > maxTime)
                     maxTime = correntTime;
                 if (correntTime < minTime)

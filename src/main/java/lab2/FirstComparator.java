@@ -11,6 +11,7 @@ public class FirstComparator extends WritableComparator {
         TextPair a1 = (TextPair)a;
         TextPair b1 = (TextPair)b;
 
-        return a1.getSecond().compareTo(b1.getSecond());
+        int t = a1.getFirst().compareTo(b1.getFirst());
+        return t == 0 ? a1.getSecond().compareTo(b1.getSecond()) : t;
     }
 }

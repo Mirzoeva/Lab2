@@ -10,7 +10,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
     @Override
     protected void reduce(TextPair key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
         Iterator<Text> iter = values.iterator();
-        StringBuilder s = new StringBuilder("FUCK THIS\n");
+ //       StringBuilder s = new StringBuilder("FUCK THIS\n");
 
         int count = 0;
         float maxTime = Integer.MIN_VALUE;
@@ -18,10 +18,10 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         float sum = 0;
         boolean t  = false;
         Text airport = new Text(iter.next().toString() + ",");
-        s = s.append(airport);
+ //      s = s.append(airport);
         while (iter.hasNext()) {
             String call = iter.next().toString();
-            s = s.append("call: " +call+"\n");
+ //           s = s.append("call: " +call+"\n");
             try {
                 float correntTime = Float.parseFloat(call);
                 if (correntTime > maxTime)
@@ -30,12 +30,12 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
                     minTime = correntTime;
                 sum += correntTime;
             } catch (NumberFormatException e) {
-                throw new IOException(airport+"-<>-"+call);
+  //              throw new IOException(airport+"-<>-"+call);
             }
             count++;
         }
 
-        System.out.println(s);
+ //       System.out.println(s);
         if (t){
             return;
         }

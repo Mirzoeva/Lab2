@@ -9,7 +9,7 @@ public class ParserDelays {
 //            System.out.println("SUKA" + string[i] + "\n");
 //        }
         for(int i = 0; i < string.length; i++){
-            string[i] = String.
+            string[i] = string[i].stripLeading("s")
         }
         mainString = string;
     }

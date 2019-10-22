@@ -23,7 +23,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lab2/MapperDelays.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
@@ -101,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/lab2/TextPair.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
+            <state relative-caret-position="181">
               <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -232,7 +232,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571766981237" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571772289486" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -276,12 +276,12 @@
       <workItem from="1571064048491" duration="4811000" />
       <workItem from="1571151041192" duration="1171000" />
       <workItem from="1571308019130" duration="32214000" />
-      <workItem from="1571743419971" duration="9130000" />
+      <workItem from="1571743419971" duration="9141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47326000" />
+    <option name="totallyTimeSpent" value="47337000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -403,22 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab2/TextPair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#1518#1519#0" expanded="true" />
-            <element signature="e#1561#1562#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output/part-r-00001">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -499,6 +483,22 @@
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab2/TextPair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#1518#1519#0" expanded="true" />
+            <element signature="e#1561#1562#0" expanded="true" />
           </folding>
         </state>
       </provider>

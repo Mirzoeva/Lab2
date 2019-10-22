@@ -7,7 +7,7 @@ hadoop lab2.Main L_AIRPORT_ID.csv 664600583_T_ONTIME_sample.csv output
 hadoop fs -copyToLocal output
 
 
-hdfs dfs -rm -r hdfs://localhost:9000/user/umamirzoeva/output && mvn package && hadoop fs -copyFromLocal /Users/umamirzoeva/Parallel/Lab2/src/main/resources/664600583_T_ONTIME_sample.csv && hadoop fs -copyFromLocal /Users/umamirzoeva/Parallel/Lab2/src/main/resources/L_AIRPORT_ID.csv && export HADOOP_CLASSPATH=target/Lab2-1.0-SNAPSHOT.jar && hadoop lab2.Main L_AIRPORT_ID.csv 664600583_T_ONTIME_sample.csv output && hadoop fs -copyToLocal output
+hdfs dfs -rm -r hdfs://localhost:9000/user/umamirzoeva/output && mvn package && export HADOOP_CLASSPATH=target/Lab2-1.0-SNAPSHOT.jar && hadoop lab2.Main L_AIRPORT_ID.csv 664600583_T_ONTIME_sample.csv output && hadoop fs -copyToLocal output
 
 
 hdfs dfs -rm -r hdfs://localhost:9000/user/umamirzoeva/output

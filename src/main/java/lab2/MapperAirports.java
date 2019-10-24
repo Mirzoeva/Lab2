@@ -7,12 +7,12 @@ import org.apache.hadoop.io.LongWritable;
 
 public class MapperAirports extends Mapper<LongWritable, Text, TextPair, Text> {
     @Override
-    protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        if (key.get() == 0) {
+    protected void map(LongWritable stringNumber, Text textIn, Context context) throws IOException, InterruptedException {
+        if (stringNumber.get() == 0 || textIn.toString().isEmpty()) {
             return;
         }
-        TextPair airportID = new TextPair(new ParserAirports(value).getKey(), "0");
-        Text airportName = new Text(new ParserAirports(value).getValue());
+        TextPair airportID = new TextPair(new ParserAirports(textIn).getKey(), "0");
+        Text airportName = new Text(new ParserAirports(textIn).getValue());
         context.write(airportID, airportName);
     }
 }

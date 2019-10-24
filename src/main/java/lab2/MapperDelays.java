@@ -12,12 +12,12 @@ public class MapperDelays extends Mapper<LongWritable, Text, TextPair, Text> {
         if (stringNumber.get() == 0 || textIn.toString().isEmpty()) {
             return;
         }
-        String timeString = new ParserDelays(textIn.toString()).getValue();
+        String timeString = new ParserDelays(textIn).getValue();
         if (timeString.isEmpty()){
             return;
         }
         Text timeText = new Text(timeString);
-        TextPair airportID = new TextPair(new ParserDelays(textIn.toString()).getKey(), "1");
+        TextPair airportID = new TextPair(new ParserDelays(textIn).getKey(), "1");
 
         if (Float.parseFloat(timeString) > 0){
             context.write(airportID, timeText);

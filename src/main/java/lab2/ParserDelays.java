@@ -1,5 +1,7 @@
 package lab2;
 
+import org.apache.hadoop.io.Text;
+
 public class ParserDelays {
     private String[] mainString;
     private static final int ID_ROW = 14;
@@ -7,6 +9,10 @@ public class ParserDelays {
 
     public ParserDelays(String str){
         mainString = ParserUtils.splitCommas(str);
+    }
+
+    public ParserDelays(Text str){
+        mainString = ParserUtils.splitCommas(str.toString());
     }
 
     public String getKey(){

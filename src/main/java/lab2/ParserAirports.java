@@ -1,5 +1,7 @@
 package lab2;
 
+import org.apache.hadoop.io.Text;
+
 public class ParserAirports {
     private String[] mainString;
     private static final int ID_ROW = 0;
@@ -7,6 +9,10 @@ public class ParserAirports {
 
     public ParserAirports(String str){
         mainString = ParserUtils.splitAll(str);
+    }
+
+    public ParserAirports(Text str){
+        mainString = ParserUtils.splitAll(str.toString());
     }
 
     public String getKey(){

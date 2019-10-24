@@ -9,7 +9,7 @@ import java.io.IOException;
 public class MapperDelays extends Mapper<LongWritable, Text, TextPair, Text> {
     @Override
     protected void map(LongWritable stringNumber, Text textIn, Context context) throws IOException, InterruptedException {
-        if (stringNumber.get() == 0 || textIn.toString().isEmpty()) {
+        if (stringNumber.get() == 0 || textIn.toString().isEmpty() || new ParserDelays(textIn.toString()).getValue().isEmpty()) {
             return;
         }
         float time = Float.parseFloat(new ParserDelays(textIn.toString()).getValue());

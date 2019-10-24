@@ -17,7 +17,7 @@ public class MapperDelays extends Mapper<LongWritable, Text, TextPair, Text> {
             return;
         }
         Text timeText = new Text(timeString);
-        TextPair airportID = new TextPair(new ParserDelays(textIn).getKey(), "1");
+        TextPair airportID = new TextPair(new ParserDelays(textIn).getAirportID(), "1");
 
         if (Float.parseFloat(timeString) > 0){
             context.write(airportID, timeText);

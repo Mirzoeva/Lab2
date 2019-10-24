@@ -15,7 +15,7 @@ public class ParserAirports {
         mainString = ParserUtils.splitAll(str.toString());
     }
 
-    public String getKey(){
+    public String getAirportID(){
         return mainString[ID_ROW];
     }
 

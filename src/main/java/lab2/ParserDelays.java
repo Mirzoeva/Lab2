@@ -15,7 +15,7 @@ public class ParserDelays {
         mainString = ParserUtils.splitCommas(str.toString());
     }
 
-    public String getKey(){
+    public String getAirportID(){
         return mainString[ID_ROW];
     }
 

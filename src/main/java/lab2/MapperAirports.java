@@ -11,7 +11,7 @@ public class MapperAirports extends Mapper<LongWritable, Text, TextPair, Text> {
         if (stringNumber.get() == 0 || textIn.toString().isEmpty()) {
             return;
         }
-        TextPair airportID = new TextPair(new ParserAirports(textIn).getKey(), "0");
+        TextPair airportID = new TextPair(new ParserAirports(textIn).getAirportID(), "0");
         Text airportName = new Text(new ParserAirports(textIn).getValue());
         context.write(airportID, airportName);
     }

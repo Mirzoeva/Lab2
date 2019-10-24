@@ -9,8 +9,5 @@ public class ParserUtils {
         return string;
     }
 
-    public static String[] splitCommas(String str){
-        String[] string = str.split(",");
-        return string;
-    }
+    public static String[] splitCommas(String str){ return str.split(","); }
 }

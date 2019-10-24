@@ -9,17 +9,14 @@ import java.io.IOException;
 public class MapperDelays extends Mapper<LongWritable, Text, TextPair, Text> {
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        if (key.get() == 0) {
-            return;
-        }
-        if (value.toString().isEmpty() || new ParserDelays(value.toString()).getValue().isEmpty()){
+        if (key.get() == 0 || value.toString().isEmpty() || new ParserDelays(value.toString()).getValue().isEmpty()) {
             return;
         }
         float time = Float.parseFloat(new ParserDelays(value.toString()).getValue());
-        TextPair delay = new TextPair(new Text(new ParserDelays(value.toString()).getKey()), new Text("1"));
+        Text timeText = new Text(String.valueOf(time));
+        TextPair airportID = new TextPair(new Text(new ParserDelays(value.toString()).getKey()), new Text("1"));
         if (time > 0){
- //           System.out.println("Mapping delay: "+delay);
-            context.write(delay, new Text(String.valueOf(time)));
+            context.write(airportID, timeText);
         }
     }
 }

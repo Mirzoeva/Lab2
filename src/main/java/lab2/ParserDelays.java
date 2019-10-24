@@ -2,38 +2,19 @@ package lab2;
 
 public class ParserDelays {
     private String[] mainString;
+    private static final int ID_ROW = 14;
+    private static final int DELAY_ROW = 18;
 
     public ParserDelays(String str){
-        String[] string = str.split(",");
-//        for (int i = 0; i < string.length; i++){
-//            System.out.println("SUKA" + string[i] + "\n");
-//        }
-//        for(int i = 0; i < string.length; i++){
-//            string[i] = string[i]("s")
-//        }
-        mainString = string;
+        mainString = ParserUtils.splitCommas(str);
     }
 
     public String getKey(){
-        String res;
-        if (mainString.length > 15 && !mainString[14].isEmpty())
-            res = mainString[14];
-        else
-            res = "";
-
-//        System.out.println("ParserDel, Key"+res);
-        return res;
+        return mainString[ID_ROW];
     }
 
     public String getValue(){
-        String res;
-        if (mainString.length > 19 && !mainString[18].isEmpty())
-            res = mainString[18];
-        else
-            res = "";
-
-//        System.out.println("ParserDel, Value"+res);
-        return res;
+        return mainString[DELAY_ROW];
     }
 
 }

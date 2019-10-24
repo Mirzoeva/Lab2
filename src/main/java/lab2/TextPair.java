@@ -3,70 +3,59 @@ package lab2;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
-import java.util.Objects;
-
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.WritableComparable;
 
 
 public class TextPair implements WritableComparable<TextPair>{
-    private Text first;
-    private Text second;
+    private Text key;
+    private Text value;
 
     public TextPair(){
-        this.first=new Text();
-        this.second=new Text();
+        this.key =new Text();
+        this.value =new Text();
     }
 
-    public TextPair(Text first, Text second) {
-        this.first = first;
-        this.second = second;
+    public TextPair(Text key, Text value) {
+        this.key = key;
+        this.value = value;
     }
-    public TextPair(String first,String second){
-        this.first=new Text(first);
-        this.second=new Text(second);
-    }
-
-    public Text getFirst() {
-        return first;
+    public TextPair(String key, String value){
+        this.key =new Text(key);
+        this.value =new Text(value);
     }
 
-    public Text getSecond() {
-        return second;
+    public Text getKey() {
+        return key;
     }
 
-//    @Override
-//    public boolean equals(Object obj) {
-//        if(obj instanceof TextPair){
-//            TextPair tp=(TextPair)obj;
-//            return first.equals(tp.getFirst()) && second.equals(tp.getSecond());
-//        }
-//        return false;
-//    }
+    public Text getValue() {
+        return value;
+    }
 
     @Override
     public void readFields(DataInput in) throws IOException {
-        first.readFields(in);
-        second.readFields(in);
+        key.readFields(in);
+        value.readFields(in);
     }
 
     @Override
     public void write(DataOutput out) throws IOException {
-        first.write(out);
-        second.write(out);
+        key.write(out);
+        value.write(out);
     }
 
     @Override
     public int compareTo(TextPair o) {
-        int f = first.compareTo(o.getFirst());
-        if (f == 0){
-            return second.compareTo(o.getSecond());
+        int difference = key.compareTo(o.getKey());
+        if (difference == 0){
+            return value.compareTo(o.getValue());
         }
-        return f;
+        return difference;
     }
 
     @Override
     public String toString() {
-        return first.toString()+"_"+second.toString();
+        return key.toString() + "_" + value.toString();
     }
 }

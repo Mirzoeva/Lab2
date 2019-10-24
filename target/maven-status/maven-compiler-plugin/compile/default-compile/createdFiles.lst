@@ -1,9 +1,10 @@
 lab2/MapperDelays.class
 lab2/TextPair.class
+lab2/MapperAirports.class
 lab2/ParserDelays.class
-lab2/FirstComparator.class
 lab2/JoinReducer.class
+lab2/ParserAirports.class
+lab2/ParserUtils.class
 lab2/Main.class
-lab2/FirstPartitioner.class
-lab2/MapperAiports.class
-lab2/Parser.class
+lab2/ComparatorAirports.class
+lab2/PartitionerAirports.class

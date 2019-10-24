@@ -8,13 +8,13 @@ import java.io.IOException;
 
 public class MapperDelays extends Mapper<LongWritable, Text, TextPair, Text> {
     @Override
-    protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        if (key.get() == 0 || value.toString().isEmpty() || new ParserDelays(value.toString()).getValue().isEmpty()) {
+    protected void map(LongWritable stringNumber, Text textIn, Context context) throws IOException, InterruptedException {
+        if (stringNumber.get() == 0 || textIn.toString().isEmpty()) {
             return;
         }
-        float time = Float.parseFloat(new ParserDelays(value.toString()).getValue());
+        float time = Float.parseFloat(new ParserDelays(textIn.toString()).getValue());
         Text timeText = new Text(String.valueOf(time));
-        TextPair airportID = new TextPair(new Text(new ParserDelays(value.toString()).getKey()), new Text("1"));
+        TextPair airportID = new TextPair(new Text(new ParserDelays(textIn.toString()).getKey()), new Text("1"));
         if (time > 0){
             context.write(airportID, timeText);
         }
